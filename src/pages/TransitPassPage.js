@@ -60,10 +60,10 @@ const TransitPassPage = () => {
         Barrie Transit
       </Typography>
       <img
-        src="https://via.placeholder.com/300x150" // Replace with your image
-        alt="Transit Illustration"
-        style={{ marginBottom: 20 }}
-      />
+  src="../images/myTransitGif.gif" // Path relative to the public folder
+  alt="Transit Illustration"
+  style={{ marginBottom: 20 }}
+/>
       <Button variant="contained" style={{ backgroundColor: '#00A9A5', color: 'white' }}>
         Expire
       </Button>
