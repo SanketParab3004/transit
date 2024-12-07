@@ -6,7 +6,6 @@ import TransitPassPage from './pages/TransitPassPage';
 const App = () => {
   return (
     <div>
-      <Navbar />
       <TransitPassPage />
       <Footer />
     </div>
