@@ -2,7 +2,7 @@
   "name": "transit-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://{username}.github.io/{repo-name}",
+  "homepage": "https://SanketParab3004.github.io/transit",
   "dependencies": {
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
