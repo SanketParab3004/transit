@@ -60,8 +60,9 @@ const TransitPassPage = () => {
             paddingBottom: 4,
             marginLeft: 'auto',
             marginRight: 'auto',
-            marginTop: -10, // Fixed top margin (same for all screen sizes)
+            marginTop: -10,  // Fixed top margin
             boxSizing: 'border-box',
+            zIndex: 1,  // Lower z-index to make sure it's behind the header
         }}
       >
         {/* Student Monthly Pass title */}
@@ -70,17 +71,17 @@ const TransitPassPage = () => {
         </Typography>
 
         {/* Current Date in Bold */}
-        <Typography variant="h6" sx={{ color: 'white', fontWeight: 'bold', marginBottom: 2 }}>
+        <Typography variant="h5" sx={{ color: 'white', fontWeight: 'bold', marginBottom: 2 }}>
           {currentTime.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })}
         </Typography>
 
         {/* Current Time in Bold (AM/PM format) */}
-        <Typography variant="h4" sx={{ color: 'white', fontWeight: 'bold', marginBottom: 2 }}>
+        <Typography variant="h5" sx={{ color: 'white', fontWeight: 'bold', marginBottom: 2 }}>
           {currentTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true })}
         </Typography>
 
         {/* Barrie Transit (Not bold and smaller font size) */}
-        <Typography variant="body1" sx={{ color: 'white', fontSize: '0.875rem', marginBottom: 2 }}>
+        <Typography variant="body1" sx={{ color: 'white', fontSize: '0.875rem', marginBottom: 0.5 }}>
           Barrie Transit
         </Typography>
 
@@ -99,7 +100,7 @@ const TransitPassPage = () => {
         />
 
         {/* Expire Button */}
-        <Button variant="contained" sx={{ backgroundColor: '#00A9A5', color: 'white', marginBottom: 2 }}>
+        <Button variant="contained" sx={{ backgroundColor: '#00A9A5', color: 'white', marginBottom: 2, boxShadow: 'none', borderRadius: 20 }}>
           Expire
         </Button>
 
@@ -115,7 +116,7 @@ const TransitPassPage = () => {
       </Box>
 
       {/* Live Map Button outside the rectangle */}
-      <Button variant="contained" sx={{ backgroundColor: '#00A9A5', color: 'white' }}>
+      <Button variant="contained" sx={{ backgroundColor: '#00A9A5', color: 'white', marginTop: 2, boxShadow: 'none', borderRadius: 20 }}>
         Live Map
       </Button>
     </Box>
