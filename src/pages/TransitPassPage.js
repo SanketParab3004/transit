@@ -4,7 +4,7 @@ import myTransitGif from './/myTransitGif.gif'; // Import gif from the images fo
 
 const TransitPassPage = () => {
   // State for the countdown timer and user ID
-  const [countdown, setCountdown] = useState(85 * 60); // 85 minutes in seconds
+  const [countdown, setCountdown] = useState(85); // 85 minutes in seconds
   const [userId, setUserId] = useState(null);
   const [currentTime, setCurrentTime] = useState(new Date());
 
