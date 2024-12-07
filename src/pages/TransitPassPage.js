@@ -78,10 +78,10 @@ const TransitPassPage = () => {
 
         {/* Transit GIF */}
         <img
-          src="/images/myTransitGif.gif" // Replace with your desired gif
-          alt="Transit Illustration"
-          style={{ marginBottom: 20 }}
-        />
+        src={myTransitGif} // Path imported from images
+        alt="Transit Illustration"
+        style={{ marginBottom: 20 }}
+      />
 
         {/* Expire Button */}
         <Button variant="contained" sx={{ backgroundColor: '#00A9A5', color: 'white', marginBottom: 2 }}>
