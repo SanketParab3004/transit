@@ -29,7 +29,7 @@ const TransitPassPage = () => {
   // Convert seconds to MM:SS format for countdown
   const formatTime = (timeInSeconds) => {
     const minutes = Math.floor(timeInSeconds / 60);
-    return `${minutes}:00`; // Only show minutes, with ":00" for seconds
+    return `${minutes}`; // Only show minutes, with ":00" for seconds
   };
 
   return (
