@@ -86,7 +86,7 @@ const TransitPassPage = () => {
             paddingBottom: 4,
             marginLeft: 'auto',
             marginRight: 'auto',
-            marginTop: -10,  // Fixed top margin
+            marginTop: 0,  // Fixed top margin
             boxSizing: 'border-box',
             zIndex: 1,  // Higher z-index to place the blue rectangle above the navbar
           }}
