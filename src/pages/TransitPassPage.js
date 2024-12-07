@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Button, Typography } from '@mui/material';
-import myTransitGif from '/myTransitGif.gif'; // Import gif from the images folder
+import myTransitGif from 'myTransitGif.gif'; // Path imported from images
 
 const TransitPassPage = () => {
   // State for the countdown timer and user ID
@@ -55,6 +55,7 @@ const TransitPassPage = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          paddingBottom: 4, // Increased padding to allow space for the GIF
         }}
       >
         {/* Student Monthly Pass title */}
@@ -79,10 +80,16 @@ const TransitPassPage = () => {
 
         {/* Transit GIF */}
         <img
-        src={myTransitGif} // Path imported from images
-        alt="Transit Illustration"
-        style={{ marginBottom: 20 }}
-      />
+          src={myTransitGif} // Path imported from images
+          alt="Transit Illustration"
+          style={{
+            width: '100%', // Makes image responsive
+            height: 'auto', // Maintains aspect ratio
+            objectFit: 'cover', // Ensures image covers the available space
+            marginBottom: 20,  // Adds space between the image and the button below
+            borderRadius: 4,  // Rounded corners for better design
+          }}
+        />
 
         {/* Expire Button */}
         <Button variant="contained" sx={{ backgroundColor: '#00A9A5', color: 'white', marginBottom: 2 }}>
