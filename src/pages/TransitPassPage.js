@@ -36,7 +36,7 @@ const TransitPassPage = () => {
     <Box
       sx={{
         backgroundColor: 'white',
-        paddingTop: 4,  // Padding for the top
+
         paddingBottom: 4,  // Padding for the bottom
         paddingLeft: 4,  // Left padding for gap
         paddingRight: 4,  // Right padding for gap
