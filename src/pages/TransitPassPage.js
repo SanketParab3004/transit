@@ -36,25 +36,27 @@ const TransitPassPage = () => {
     <Box
       sx={{
         backgroundColor: 'white',
-        padding: 4,
+        padding: 4, // Padding around the entire page
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column',
         alignItems: 'center',
+        minHeight: '100vh', // Ensure it takes up at least the full screen height
       }}
     >
       {/* Blue rectangle container */}
       <Box
         sx={{
-          backgroundColor: '#2F8195',
-          width: '100%',
-          maxWidth: 400,
-          padding: 3,
-          borderRadius: 2,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          paddingBottom: 4, // Increased padding to allow space for the GIF
+            backgroundColor: '#2F8195',
+            width: '100%', // Full width for responsiveness
+            maxWidth: 400, // Adjust this value to make the rectangle smaller
+            padding: 3,
+            borderRadius: 2,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            paddingBottom: 4, // Space for GIF
+            boxSizing: 'border-box', // Ensure padding is included in the element's total width
         }}
       >
         {/* Student Monthly Pass title */}
