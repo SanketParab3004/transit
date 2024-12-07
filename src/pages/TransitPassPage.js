@@ -67,9 +67,9 @@ const TransitPassPage = () => {
             justifyContent: 'center',
             flexDirection: 'column',
             alignItems: 'center',
-            minHeight: '100vh', // Full screen height
+            minHeight: '80vh', // Decrease the height (e.g., 80% of the viewport height)
             boxSizing: 'border-box',
-            marginTop: '64px', // Ensure content isn't hidden behind the navbar
+            marginTop: '64px', // Keep this to ensure content isn't hidden behind the navbar
             position: 'relative',
         }}
       >
