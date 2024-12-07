@@ -48,7 +48,7 @@ const TransitPassPage = () => {
       <Box
         sx={{
             backgroundColor: '#2F8195',
-            width: '100%', // Full width for responsiveness
+            width: '80%', // Full width for responsiveness
             maxWidth: 400, // Adjust this value to make the rectangle smaller
             padding: 3,
             borderRadius: 2,
