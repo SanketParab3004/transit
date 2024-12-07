@@ -114,9 +114,9 @@ const TransitPassPage = () => {
             </Typography>
 
             {/* Current Date in Bold */}
-            <Typography variant="h5" sx={{ color: 'white', fontWeight: 'bold', marginBottom: 2 }}>
-              {currentTime.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })}
-            </Typography>
+            <Typography variant="h4" sx={{ color: 'white', fontWeight: 'bold', marginBottom: 2 }}>
+  {currentTime.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' }).replace(/,/g, '')}
+</Typography>
 
             {/* Current Time in Bold (AM/PM format) */}
             <Typography variant="h5" sx={{ color: 'white', fontWeight: 'bold', marginBottom: 2 }}>
