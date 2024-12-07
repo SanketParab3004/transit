@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Button, Typography } from '@mui/material';
-import myTransitGif from './/myTransitGif.gif'; // Import gif from the images folder
+import myTransitGif from './myTransitGif.gif'; // Import gif from the images folder
 
 const TransitPassPage = () => {
   // State for the countdown timer and user ID
@@ -26,10 +26,10 @@ const TransitPassPage = () => {
     return () => clearInterval(timer);
   }, [countdown]);
 
-  // Convert seconds to MM:SS format for countdown
+  // Convert seconds to MM format for countdown (without seconds)
   const formatTime = (timeInSeconds) => {
     const minutes = Math.floor(timeInSeconds / 60);
-    return `${minutes}`; // Only show minutes, with ":00" for seconds
+    return `${minutes}`; // Only show minutes
   };
 
   return (
@@ -47,18 +47,18 @@ const TransitPassPage = () => {
       {/* Blue rectangle container */}
       <Box
         sx={{
-            backgroundColor: '#2F8195',
-            width: '100%',  // Full width for responsiveness
-            maxWidth: 400,  // Adjust this value to make the rectangle smaller
-            padding: 3,
-            borderRadius: 2,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            paddingBottom: 4,  // Space for the GIF at the bottom
-            marginLeft: 'auto',  // Center the rectangle with a gap on the left
-            marginRight: 'auto',  // Center the rectangle with a gap on the right
-            boxSizing: 'border-box',  // Ensure padding is included in the element's width
+          backgroundColor: '#2F8195',
+          width: '100%',  // Full width for responsiveness
+          maxWidth: 400,  // Adjust this value to make the rectangle smaller
+          padding: 3,
+          borderRadius: 2,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          paddingBottom: 4,  // Space for the GIF at the bottom
+          marginLeft: 'auto',  // Center the rectangle with a gap on the left
+          marginRight: 'auto',  // Center the rectangle with a gap on the right
+          boxSizing: 'border-box',  // Ensure padding is included in the element's width
         }}
       >
         {/* Student Monthly Pass title */}
@@ -87,11 +87,11 @@ const TransitPassPage = () => {
           alt="Transit Illustration"
           style={{
             width: '100%', // Makes image responsive
-            maxWidth: '100%', // Ensures the image does not exceed the container width
             height: 'auto', // Maintains aspect ratio
             objectFit: 'contain', // Ensures the entire image is visible without stretching
-            marginBottom: 20,  // Adds space between the image and the button below
-            borderRadius: 4,  // Rounded corners for better design
+            marginBottom: 20, // Adds space between the image and the button below
+            borderRadius: 4, // Rounded corners for better design
+            padding: '0 10px',  // Adds some padding between the image and the rectangle's border
           }}
         />
 
