@@ -78,9 +78,9 @@ const TransitPassPage = () => {
 
         {/* Transit GIF */}
         <img
-            src="../images/myTransitGif.gif" // Path relative to the public folder
-            alt="Transit Illustration"
-            style={{ marginBottom: 20 }}
+          src="https://via.placeholder.com/300x150" // Replace with your desired gif
+          alt="Transit Illustration"
+          style={{ marginBottom: 20 }}
         />
 
         {/* Expire Button */}
