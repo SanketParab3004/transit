@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Button, Typography } from '@mui/material';
-import myTransitGif from 'myTransitGif.gif'; // Path imported from images
+import myTransitGif from '/myTransitGif.gif'; // Path imported from images
 
 const TransitPassPage = () => {
   // State for the countdown timer and user ID
