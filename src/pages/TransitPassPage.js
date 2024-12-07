@@ -36,10 +36,7 @@ const TransitPassPage = () => {
     <Box
       sx={{
         backgroundColor: 'white',
-        paddingTop: 1,  // Padding for the top
-        paddingBottom: 4,  // Padding for the bottom
-        paddingLeft: 4,  // Left padding for gap
-        paddingRight: 4,  // Right padding for gap
+        padding: 4,
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column',
@@ -59,6 +56,8 @@ const TransitPassPage = () => {
             flexDirection: 'column',
             alignItems: 'center',
             paddingBottom: 4,  // Space for the GIF at the bottom
+            marginLeft: 'auto',  // Center the rectangle with a gap on the left
+            marginRight: 'auto',  // Center the rectangle with a gap on the right
             boxSizing: 'border-box',  // Ensure padding is included in the element's width
         }}
       >
