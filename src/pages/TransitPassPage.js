@@ -38,20 +38,21 @@ const TransitPassPage = () => {
     <>
       {/* Navbar - Behind the blue rectangle */}
       <AppBar 
-        position="absolute" // Positioned behind the content
+        position="sticky" // Positioned behind the content
         style={{
-          backgroundColor: '#2F8195',
+          backgroundColor: 'white',
           top: 0,  // Ensure it's at the top
           zIndex: 0, // Lower z-index to place it behind the blue rectangle
           width: '100%',
+          boxShadow: 'none',  // Removes the shadow
         }}
       >
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="menu">
-            <MenuIcon />
+            <MenuIcon style={{ color: 'black' }}/>
           </IconButton>
           <IconButton color="inherit">
-            <ArrowBackIcon />
+            <ArrowBackIcon style={{ color: 'black' }}/>
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -59,17 +60,17 @@ const TransitPassPage = () => {
       {/* Main Content - Transit Pass Page */}
       <Box
         sx={{
-          backgroundColor: 'white',
-          paddingRight: 4,
-          paddingLeft: 4,
-          display: 'flex',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          alignItems: 'center',
-          minHeight: '100vh', // Full screen height
-          boxSizing: 'border-box',
-          marginTop: '64px', // Ensure content isn't hidden behind the navbar
-          position: 'relative',
+            backgroundColor: 'white',
+            paddingRight: 4,
+            paddingLeft: 4,
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            alignItems: 'center',
+            minHeight: '100vh', // Full screen height
+            boxSizing: 'border-box',
+            marginTop: '64px', // Ensure content isn't hidden behind the navbar
+            position: 'relative',
         }}
       >
         {/* Blue rectangle container */}
@@ -86,7 +87,7 @@ const TransitPassPage = () => {
             paddingBottom: 4,
             marginLeft: 'auto',
             marginRight: 'auto',
-            marginTop: 0,  // Fixed top margin
+            marginTop: '20px',  // Slightly lower than the main container (adjust as needed)
             boxSizing: 'border-box',
             zIndex: 1,  // Higher z-index to place the blue rectangle above the navbar
           }}
