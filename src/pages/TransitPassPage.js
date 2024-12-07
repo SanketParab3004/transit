@@ -41,38 +41,68 @@ const TransitPassPage = () => {
         justifyContent: 'center',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center',
-        height: 'calc(100vh - 112px)', // Account for Navbar and Footer
-        padding: 2,
-        backgroundColor: '#2F8195',
       }}
     >
-      <Typography variant="h6" style={{ color: 'white', marginBottom: 10 }}>
-        Student Monthly Pass
-      </Typography>
-      <Typography variant="h4" style={{ color: 'white' }}>
-        Fri Dec 06 2024
-      </Typography>
-      <Typography variant="h5" style={{ color: 'white' }}>
-        10:22:08 PM
-      </Typography>
-      <Typography variant="body1" style={{ color: 'white', marginBottom: 10 }}>
-        Barrie Transit
-      </Typography>
-      <img
-  src="../images/myTransitGif.gif" // Path relative to the public folder
-  alt="Transit Illustration"
-  style={{ marginBottom: 20 }}
-/>
-      <Button variant="contained" style={{ backgroundColor: '#00A9A5', color: 'white' }}>
-        Expire
+      {/* Blue rectangle container */}
+      <Box
+        sx={{
+          backgroundColor: '#2F8195',
+          width: '100%',
+          maxWidth: 400,
+          padding: 3,
+          borderRadius: 2,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
+        {/* Student Monthly Pass title */}
+        <Typography variant="h6" sx={{ color: 'white', marginBottom: 2 }}>
+          Student Monthly Pass
+        </Typography>
+
+        {/* Current Date in Bold */}
+        <Typography variant="h6" sx={{ color: 'white', fontWeight: 'bold', marginBottom: 2 }}>
+          {currentTime.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })}
+        </Typography>
+
+        {/* Current Time in Bold (AM/PM format) */}
+        <Typography variant="h4" sx={{ color: 'white', fontWeight: 'bold', marginBottom: 2 }}>
+          {currentTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true })}
+        </Typography>
+
+        {/* Barrie Transit (Not bold and smaller font size) */}
+        <Typography variant="body1" sx={{ color: 'white', fontSize: '0.875rem', marginBottom: 2 }}>
+          Barrie Transit
+        </Typography>
+
+        {/* Transit GIF */}
+        <img
+            src="../images/myTransitGif.gif" // Path relative to the public folder
+            alt="Transit Illustration"
+            style={{ marginBottom: 20 }}
+        />
+
+        {/* Expire Button */}
+        <Button variant="contained" sx={{ backgroundColor: '#00A9A5', color: 'white', marginBottom: 2 }}>
+          Expire
+        </Button>
+
+        {/* Countdown timer with bold 85 minutes */}
+        <Typography variant="body1" sx={{ color: 'white', fontWeight: 'bold', marginBottom: 2 }}>
+          This pass expires after {formatTime(countdown)} minutes
+        </Typography>
+
+        {/* User ID */}
+        <Typography variant="caption" sx={{ color: 'white', marginBottom: 2 }}>
+          User ID {userId}
+        </Typography>
+      </Box>
+
+      {/* Live Map Button outside the rectangle */}
+      <Button variant="contained" sx={{ backgroundColor: '#00A9A5', color: 'white' }}>
+        Live Map
       </Button>
-      <Typography variant="body2" style={{ color: 'white', marginTop: 20 }}>
-        This pass expires after 85 minutes
-      </Typography>
-      <Typography variant="caption" style={{ color: 'white' }}>
-        User ID 100864817
-      </Typography>
     </Box>
   );
 };
