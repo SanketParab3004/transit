@@ -78,7 +78,7 @@ const TransitPassPage = () => {
 
         {/* Transit GIF */}
         <img
-          src="https://via.placeholder.com/300x150" // Replace with your desired gif
+          src="/images/myTransitGif.gif" // Replace with your desired gif
           alt="Transit Illustration"
           style={{ marginBottom: 20 }}
         />
