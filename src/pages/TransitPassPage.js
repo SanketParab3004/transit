@@ -84,8 +84,9 @@ const TransitPassPage = () => {
           alt="Transit Illustration"
           style={{
             width: '100%', // Makes image responsive
+            maxWidth: '100%', // Ensures the image does not exceed the container width
             height: 'auto', // Maintains aspect ratio
-            objectFit: 'cover', // Ensures image covers the available space
+            objectFit: 'contain', // Ensures the entire image is visible without stretching
             marginBottom: 20,  // Adds space between the image and the button below
             borderRadius: 4,  // Rounded corners for better design
           }}
