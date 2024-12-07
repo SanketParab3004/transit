@@ -36,7 +36,8 @@ const TransitPassPage = () => {
     <Box
       sx={{
         backgroundColor: 'white',
-        padding: 4,
+        paddingRight: 4,
+        paddingLeft: 4,
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column',
@@ -59,7 +60,7 @@ const TransitPassPage = () => {
             paddingBottom: 4,
             marginLeft: 'auto',
             marginRight: 'auto',
-            marginTop: { xs: 2, sm: 4, md: 8 }, // Responsive margin for top spacing
+            marginTop: -10, // Fixed top margin (same for all screen sizes)
             boxSizing: 'border-box',
         }}
       >
