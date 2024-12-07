@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/transit/static/css/main.e6c13ad2.css",
-    "main.js": "/transit/static/js/main.16ae55fd.js",
+    "main.js": "/transit/static/js/main.a8017393.js",
     "static/media/myTransitGif.gif": "/transit/static/media/myTransitGif.e3c23a5eac75e628335e.gif",
     "index.html": "/transit/index.html",
     "main.e6c13ad2.css.map": "/transit/static/css/main.e6c13ad2.css.map",
-    "main.16ae55fd.js.map": "/transit/static/js/main.16ae55fd.js.map"
+    "main.a8017393.js.map": "/transit/static/js/main.a8017393.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.16ae55fd.js"
+    "static/js/main.a8017393.js"
   ]
 }
